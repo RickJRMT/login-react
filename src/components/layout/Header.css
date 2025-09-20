@@ -15,5 +15,52 @@
 }
 
 .header-logo{
-    fo
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.header-logo:hover {
+    color: #93c5fd;
+}
+
+.header-nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 2px;
+}
+
+.nav-link:hover{
+    color: #ffffff;
+    border-bottom: 2px solid #60a5fa;
+}
+
+.nav-link.active{
+    color: #ffffff;
+    border-bottom: 2px solid #2563eb;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-user{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.logout-btn{
+    background-color: #4b5563;
+    color: white;
 }

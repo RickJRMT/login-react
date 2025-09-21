@@ -1,4 +1,4 @@
-.login-fondo{
+.registro-fondo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     background: linear-gradient(135deg, #f5f5f5, #d9eaf7);
 }
 
-.login-tarjeta{
+.registro-tarjeta{
     background-color: white;
     padding: 40px 30px;
     border-radius: 15px;
@@ -21,36 +21,41 @@
     100% {opacity: 1; transform: translateY(0);}
 }
 
-.login-titulo{
+.registro-titulo{
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 25px;
     color: #222;
 }
 
-.login-formulario{
+.registro-formulario{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.login-label {
+.registro-grupo{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registro-etiqueta{
     margin-bottom: 8px;
     font-weight: bold;
     font-size: 0.9rem;
     text-align: left;
 }
 
-.login-input{
+.registro-entrada{
     padding: 12px;
-    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 100%;
     font-size: 1rem;
 }
 
-.btn-login{
+.registro-boton{
     padding: 12px;
     background-color: rgb(17, 161, 194);
     color: white;
@@ -62,30 +67,42 @@
     transition: all 0.3s ease;
 }
 
-.btn-login:hover{
+.registro-boton:hover{
     background-color: #0a7b8a;
     transform: translateY(-2px);
 }
 
-.btn-login.active{
+.registro-boton:active{
     background-color: #06676c;
 }
 
-.btn-login.focus{
+.registro-boton:focus{
     outline: none;
 }
 
-.login-texto{
+.registro-error{
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.registro-exito{
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.registro-texto{
     margin-top: 20px;
     font-size: 14px;
 }
 
-.login-enlace{
+.registro-enlace{
     color: rgb(17, 161, 194);
     font-weight: bold;
     text-decoration: none;
 }
 
-.login-enlace:hover{
+.registro-enlace:hover{
     text-decoration: underline;
 }

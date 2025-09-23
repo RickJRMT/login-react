@@ -8,4 +8,4 @@ export const AuthProvider = ({ children }) => {
     return <AuthContext.Provider value={auth}>{children}</AuthContext.Provider>
 }
 
-export const useContext = () => useContext(AuthContext); 
+export const useAuthContext = () => useContext(AuthContext); 

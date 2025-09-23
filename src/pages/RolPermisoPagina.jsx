@@ -1,7 +1,15 @@
 import { useState, useEffect } from "react";
-import { ModalRolPermiso } from "../../components/ui/ModalRolPermiso";
-import { leerRoles } from "../../services/rolesService";
-import { leerPermisos } from "../../services/permisosService";
+import { ModalRolPermiso } from "../components/ui/ModalRolPermiso";
+import { leerRoles } from "../services/rolService";
+import { leerPermisos } from "../services/permisoService";
+import {
+leerRolPermisos, 
+crearRolPermiso, 
+eliminarRolPermiso, 
+leerPermisosDeRol, } from '../services/rolPermisoService'; 
+import { Layout } from "../components/layout/Layout";
+import './Pagina.css'; 
+
 
 export const RolPermisoPagina = () => {
     const [rolPermisos, setRolPermisos] = useState([]);

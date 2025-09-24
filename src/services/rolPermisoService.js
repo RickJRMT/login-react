@@ -1,7 +1,7 @@
 const API_URL = "http://localhost:3000/api/rol-permiso";
 
 // Leer todas las relaciones rol-permiso
-export const leerPermisos = async () => {
+export const leerRolPermisos = async () => {
     const res = await fetch(API_URL);
     if (!res.ok) throw new Error("Error al obtener rol-permisos");
     return res.json();

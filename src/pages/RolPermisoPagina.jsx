@@ -25,6 +25,7 @@ export const RolPermisoPagina = () => {
 
     const fetchRoles = async () => setRoles(await leerRoles());
     const fetchPermisos = async () => setPermisos(await leerPermisos());
+    const fetchRolPermisos = async () => setPermisos(await leerRolPermisos());
 
     const handleSave = async ({ id_rol, permisos }) => {
         for (const permisoId of permisos) {

@@ -38,7 +38,7 @@ export const ModalRolPermiso = ({
       alert("Seleccione un rol.");
       return;
     }
-    onSave({ id_rol: Number(idRol), permisos: permisosSeleccionados });
+    onSave({ id_rol: Number(idRol), permisos : permisosSeleccionados });
   };
 
   return (
@@ -70,7 +70,7 @@ export const ModalRolPermiso = ({
             <button
               type="button"
               className="modal-boton-cancelar"
-              onClick={onclose}
+              onClick={onClose}
             ></button>
             <button type="submit" className="modal-boton-guardar">
               Guardar

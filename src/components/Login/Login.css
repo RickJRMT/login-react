@@ -67,11 +67,11 @@
     transform: translateY(-2px);
 }
 
-.btn-login.active{
+.btn-login-active{
     background-color: #06676c;
 }
 
-.btn-login.focus{
+.btn-login-focus{
     outline: none;
 }
 
